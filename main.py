@@ -8,10 +8,11 @@ def functionMain():
                 #count = file.read()
                 count = count + 1
                 print(count)
-                time.sleep(2)
+                time.sleep(3)
                 #CAPTURA POSIÇÃO
                 positionSend = pyautogui.locateOnScreen('send.png', grayscale=True,confidence=0.8)
                 positionCenter = pyautogui.center(positionSend)
                 pyautogui.click(positionCenter.x,positionCenter.y)
+                time.sleep(1)
 
 functionMain()
